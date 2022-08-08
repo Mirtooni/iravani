@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html dir="rtl" class="h-full">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <link rel="stylesheet" href="./src/final.css">
+    <script src="https://kit.fontawesome.com/f1169db71b.js" crossorigin="anonymous"></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+
+      body {
+        background: #eee;
+      
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body class="p-4 flex flex-col items-center md:flex-row md:flex-wrap md:justify-around space-y-4">
+    
+
+    <nav class="p-4 w-full mb-4 group md:items-center bg-white rounded-md flex flex-col md:flex-row md:justify-between md:space-y-0 space-y-2 font-normal">
+      <div class="flex flex-row justify-between">
+          <section class="md:w-32 w-24">
+              <img src="logo1.png" alt="">
+          </section>
+          <div class="md:hidden flex items-center"><i class="rounded-full group-hover:outline outline-2 outline-gray-600 p-1 fa-solid text-gray-600 fa-circle-chevron-down"></i></div>
+      </div>
+      <section class="hidden group-hover:flex md:flex items-baseline md:flex-row flex-col md:space-y-0 space-y-2 justify-around md:w-2/5 md:font-normal text-gray-500 text-lg">
+          <a class="text-gray-900 p-1 rounded-md cursor-pointer w-full md:w-auto">رئیسی</a>
+          <a class="hover:text-gray-900 p-1 rounded-md cursor-pointer w-full md:w-auto">الدروس</a>
+          <a class="hover:text-gray-900 p-1 rounded-md cursor-pointer w-full md:w-auto">من نحن</a>
+          <a class="hover:text-gray-900 p-1 rounded-md cursor-pointer w-full md:w-auto">الاخبار</a>
+      </section>
+  </nav>
+
+
+
+      <div class="swiper mySwiper rounded-xl w-full h-72 md:h-96 md:w-4/6 border border-gray-200 shadow-md " style="margin:inherit">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <div class="bg-cover bg-center bg-no-repeat w-full h-full flex items-end p-8 justify-center" style="background-image:url(./pic.jpg);">
+                  <p class="text-white text-xl bg-black/60 rounded-lg p-1 text-right underline decoration-1"> دیدار ایت الله با طلاب در پی سلسه ها</p>
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="bg-cover md:bg-contain bg-center bg-no-repeat w-full h-full flex items-end p-8 justify-center" style="background-image:url(./pic2.jfif);">
+                  <p class="text-white text-xl bg-black/60 rounded-lg p-1 text-right underline decoration-1"> دیدار ایت الله با طلاب</p>
+              </div>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="flex flex-col items-center max-w-xs bg-white hover:bg-gray-100 hover:cursor-pointer rounded-lg border border-gray-200 shadow-md p-4  ">
+        <div href="#" class="h-3/5  ">
+            <img class="rounded-lg h-full" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
+        </div>
+        <div class="p-3">
+            <a href="#">
+                <h5 class="mb-2 text-lg md:text-xl font-bold tracking-tight text-gray-900"> سخنرانی امروز </h5>
+            </a>
+            <p class=" mb-3 text-sm font-bold text-gray-600 text-justify overflow-ellipsis">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+            <button  class="text-xs flex flex-row items-end p-1 bg-gray-200 rounded-lg font-bold"><i class="fa-solid fa-thumbtack"></i><p class="mr-1">منتخب</p></button>
+        </div>
+    </div>
+
+    <div class="flex flex-row w-full items-center">
+      <hr class="border border-gray-400 w-1/6 md:w-2/12">
+      <p class="w-1/6 text-center md:w-1/12">الدروس</p>
+      <hr class="border border-gray-400 w-2/3 md:w-9/12">
+    </div>
+
+
+    <div class="w-full p-4 flex flex-col md:flex-row justify-around items-center space-y-4">
+
+      <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md ">
+        <a href="#">
+            <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
+        </a>
+        <div class="p-5">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">سخنرانی امروز</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 text-justify">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است </p>
+            <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 ">
+                <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                بیشتر بدانید  
+            </a>
+        </div>
+    </div>
+
+    <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md ">
+      <a href="#">
+          <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
+      </a>
+      <div class="p-5">
+          <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">سخنرانی امروز</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 text-justify">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است </p>
+          <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 ">
+              <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              بیشتر بدانید  
+          </a>
+      </div>
+  </div>
+
+  <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md ">
+    <a href="#">
+        <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">سخنرانی امروز</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 text-justify">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است </p>
+        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 ">
+            <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            بیشتر بدانید  
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+    </div>
+
+
+
+    <div class="flex flex-row w-full items-center">
+      <hr class="border border-gray-400 w-1/6 md:w-2/12">
+      <p class="w-1/6 text-center md:w-1/12">الاخبار</p>
+      <hr class="border border-gray-400 w-2/3 md:w-9/12">
+    </div>
+
+
+<!-- news -->
+    <div class="w-full p-4 flex flex-wrap flex-col md:flex-row justify-around items-center space-y-4">
+
+
+      <a href="#" class="flex flex-col items-center bg-white rounded-lg border border-gray-200 shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 ">
+        <img class="object-cover w-full h-64 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-r-lg" src="https://flowbite.com/docs/images/blog/image-4.jpg" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-lg md:text-2xl font-bold tracking-tight text-gray-900 ">گناهان عصر جدید </h5>
+            <p class="mb-3 font-bold text-sm text-gray-700">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+            <div class="flex flex-row items-baseline">
+                <i class="fa-regular fa-calendar"></i>  
+                <p class="text-gray-600 text-sm mr-1">2 ذی الحجه</p>
+            </div>
+        </div>
+    </a>
+
+
+    <a href="#" class="flex flex-col items-center bg-white rounded-lg border border-gray-200 shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 ">
+      <img class="object-cover w-full h-64 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-r-lg" src="https://flowbite.com/docs/images/blog/image-4.jpg" alt="">
+      <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-lg md:text-2xl font-bold tracking-tight text-gray-900 ">گناهان عصر جدید </h5>
+          <p class="mb-3 font-bold text-sm text-gray-700">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+          <div class="flex flex-row items-baseline">
+              <i class="fa-regular fa-calendar"></i>  
+              <p class="text-gray-600 text-sm mr-1">2 ذی الحجه</p>
+          </div>
+      </div>
+  </a>
+
+
+  <a href="#" class="flex flex-col items-center bg-white rounded-lg border border-gray-200 shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 ">
+    <img class="object-cover w-full h-64 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-r-lg" src="https://flowbite.com/docs/images/blog/image-4.jpg" alt="">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5 class="mb-2 text-lg md:text-2xl font-bold tracking-tight text-gray-900 ">گناهان عصر جدید </h5>
+        <p class="mb-3 font-bold text-sm text-gray-700">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+        <div class="flex flex-row items-baseline">
+            <i class="fa-regular fa-calendar"></i>  
+            <p class="text-gray-600 text-sm mr-1">2 ذی الحجه</p>
+        </div>
+    </div>
+</a>
+
+
+<a href="#" class="flex flex-col items-center bg-white rounded-lg border border-gray-200 shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 ">
+  <img class="object-cover w-full h-64 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-r-lg" src="https://flowbite.com/docs/images/blog/image-4.jpg" alt="">
+  <div class="flex flex-col justify-between p-4 leading-normal">
+      <h5 class="mb-2 text-lg md:text-2xl font-bold tracking-tight text-gray-900 ">گناهان عصر جدید </h5>
+      <p class="mb-3 font-bold text-sm text-gray-700">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+      <div class="flex flex-row items-baseline">
+          <i class="fa-regular fa-calendar"></i>  
+          <p class="text-gray-600 text-sm mr-1">2 ذی الحجه</p>
+      </div>
+  </div>
+</a>
+
+
+    </div>
+<!-- end news -->
+
+
+    <!-- <div class="flex flex-col items-center max-w-xs bg-white rounded-lg border border-gray-200 shadow-md p-4  ">
+      <div href="#" class="h-3/5  ">
+          <img class="rounded-lg h-full" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
+      </div>
+      <div class="p-3">
+          <a href="#">
+              <h5 class="mb-2 text-lg md:text-2xl font-bold tracking-tight text-gray-900">سخنرانی امروز</h5>
+          </a>
+          <p class=" mb-3 text-sm font-bold text-gray-600 text-justify overflow-ellipsis">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+          <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 ">
+              <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              بیشتر بدانید  
+          </a>
+      </div>
+  </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
